@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Islas Cloud informe</title>
+  </head>
+  <style>
+    /* RESETS */
+    *,
+    *:after,
+    *:before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+    body {
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      background-color: rgb(160, 161, 162);
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    img {
+      width: fit-content;
+    }
+
+    /* GLOBAL STYLES */
+
+    .d-flex {
+      display: flex;
+    }
+
+    .d-centered {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .justify-content-between {
+      justify-content: space-between;
+    }
+
+    .align-items-start {
+      align-items: start;
+    }
+
+    .gap-1 {
+      gap: 1rem;
+    }
+
+    .gap-2 {
+      gap: 2rem;
+    }
+
+    .p-1rem {
+      padding: 1rem;
+    }
+
+    .p-2rem {
+      padding: 2rem;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .h-full {
+      height: 100%;
+    }
+
+    /* COLORS */
+
+    .bg-gray {
+      background-color: #f6f6f6;
+    }
+
+    .bg-white {
+      background-color: #ffffff;
+    }
+
+    .bg-purple {
+      background-color: #3a2e6b;
+    }
+
+    .t-purple {
+      color: #3a2e6b;
+    }
+
+    .t-gray {
+      color: #969696;
+    }
+
+    .t-black {
+      color: #222221;
+    }
+
+    .t-blue {
+      color: #4376b9;
+    }
+
+    .t-white {
+      color: #ffffff;
+    }
+
+    /* TYPOGRAFY */
+
+    .fs-50 {
+      font-size: 50px;
+    }
+    .fs-25 {
+      font-size: 25px;
+    }
+    .fs-20 {
+      font-size: 20px;
+    }
+    .fs-12 {
+      font-size: 12px;
+    }
+    .fs-10 {
+      font-size: 10px;
+    }
+
+    .fw-light {
+      font-weight: 300;
+    }
+
+    .fw-bold {
+      font-weight: 700;
+    }
+
+    .fw-italic {
+      font-style: italic;
+    }
+
+    /* ESPECIFIC STYLES */
+
+    .letter {
+      height: 792px;
+      width: 612px;
+    }
+
+    .bg-image-map-light {
+      background-image: url(./assets/mapa-de-portadad-de-islas-cloud-claro.svg);
+    }
+
+    .bg-image-map-dark {
+      background-image: url(./assets/mapa-de-portadade-islas-cloud-oscuro.svg);
+    }
+
+    .purple-flag {
+      background-color: #3a2e6b;
+      height: 80px;
+      width: 500px;
+      border-radius: 0px 40px 40px 0px;
+
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+      gap: 3rem;
+    }
+
+    .content-page-footer {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <main class="d-flex d-centered flex-column p-2rem gap-2">
+      <!-- LETTER 1 -->
+
+      <div
+        class="letter d-flex flex-column justify-content-between p-2rem bg-gray bg-image-map-light"
+      >
+        <img
+          src="./assets/logotipo-islas-cloud-03.svg"
+          alt="logo color islas cloud"
+        />
+        <div class="d-flex flex-column">
+          <img src="./assets/moctezuma-logo.svg" alt="logo moctezuma" />
+          <p class="fs-50 t-purple fw-bold">INFORME DE</p>
+          <p class="fs-50 t-blue fw-bold">PRODUCCIÓN</p>
+          <p class="fs-25 t-black fw-bold">06 DE DICIEMBRE 2023</p>
+        </div>
+      </div>
+
+      <!-- LETTER 2 -->
+
+      <div class="letter d-flex flex-column bg-white justify-content-between">
+        <div class="purple-flag">
+          <img
+            src="/assets/logotipo-islas-cloud-blanco-03.svg"
+            alt="logo islas cloud pequeño blanco"
+          />
+          <p class="fw-bold t-white">INFORME DE PRODUCCIÓN O.I.</p>
+        </div>
+
+        <!-- contenido del informe -->
+        <div id="content" class="p-2rem"></div>
+        <!-- --------------------- -->
+
+        <div class="content-page-footer">
+          <p id="footer-date" class="fs-12 fw-bold t-gray">
+            30 de Noviembre de 2023 | 10:00 am | Hora centro de Mexico
+          </p>
+        </div>
+      </div>
+
+      <!-- LETTER 3 -->
+
+      <div
+        class="letter bg-purple bg-image-map-dark d-flex flex-column justify-content-between"
+      >
+        <div class="d-flex d-centered" style="height: 80%; width: 100%">
+          <img
+            src="./assets/logotipo-islas-cloud-blanco-grande.svg"
+            alt="logo islas cloud pequeño blanco"
+          />
+        </div>
+        <div class="bg-gray d-flex p-1rem gap-1 align-items-start">
+          <img src="/assets/logotipo-destra-03.svg" alt="" />
+
+          <div class="d-flex flex-column justify-content-between h-full">
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-correo-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-gray">negocios@destraislas.com</p>
+            </span>
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-telefono-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-gray">
+                800 00 ISLAS (47527) / 81 5000 4050
+              </p>
+            </span>
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-whatsapp-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-gray">81 1311 4623</p>
+            </span>
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-web-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-gray">www.destraislas.com</p>
+            </span>
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-ubicación-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-gray">
+                Antiguo Camino a Villa de García Km 4.2, C.P. 66350 Santa
+                Catarina, Nuevo León, México
+              </p>
+            </span>
+          </div>
+
+          <div class="d-flex flex-column h-full justify-content-between gap-1">
+            <img src="/assets/logotipo-de-grupo-islas-03.svg" alt="" />
+
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-linkedin-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-blue">/Grupoislas</p>
+            </span>
+
+            <span class="d-flex gap-1">
+              <img src="/assets/logotipo-facebook-03.svg" alt="" />
+              <p class="fw-italic fs-10 t-blue">/Grupoislasagua</p>
+            </span>
+          </div>
+
+          <img src="./assets/qr-de-grupo-islas-03.svg" alt="">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
